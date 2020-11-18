@@ -1,0 +1,57 @@
+/*Custom Slick style*/
+.slick-slide img {
+    display: inline-block !important;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+}
+
+.slick-dots li {
+    margin: 0 0.25rem;
+}
+
+.slick-dots li button {
+    display: block;
+    width: 0.5rem !important;
+    height: 0.5rem !important;
+    padding: 0;
+    border: none;
+    border-radius: 100%;
+    background-color: #C3C3C3 !important;
+}
+
+.slick-dots li button:before {
+    content: '' !important;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #C7D92D !important;
+}
+
+/*Testimonial Style*/
+.student-info-container {
+    margin-top: 81px;
+}
+
+.student-avatar {
+    position: absolute;
+    left: 0;
+    top: -81px;
+}
+
+.slider-container {
+    background: linear-gradient(180deg, #ffffff 50%, #23242f 50%);
+}
+
+.student-group {
+    background: linear-gradient(0deg, #ffffff 50%, #23242f 50%);
+}
+
+.pgray {
+    color: #23242f;
+}

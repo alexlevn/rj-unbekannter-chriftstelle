@@ -1,0 +1,32 @@
+.cauHoiActive,
+.cauHoi {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+
+  color: #23242f;
+  background-color: white;
+}
+.cauHoi:hover,
+.cauHoiActive {
+  color: #c7d92d;
+  background-color: #1a599e;
+}
+
+.cauTraLoi {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #23242f;
+
+  overflow: hidden;
+  opacity: 1;
+}
+
+.anCauTraLoi {
+  height: 0;
+  padding: 0;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+}

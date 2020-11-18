@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="./css/tachyons.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>ML Courses</title>
+  </head>
+  <body>
+    <!-- BLOCK 1 NEW: MOBILE -->
+    <!-- modal  -->
+    <div
+      class="mobile-menu-modal db dn-l w-100 vh-100 white flex flex-column justify"
+    >
+      <div class="w-100 ph4 pv3 flex justify-between items-center">
+        <img src="images/logo.png" class="w25" />
+        <i class="fa fa-close f3 fw1"></i>
+      </div>
+      <div class="w-100 flex flex-column self-stretch items-center">
+        <div class="pv4 plex-sans ttu">Objectives</div>
+        <div class="pv4 plex-sans ttu">Thành Tựu</div>
+        <div class="pv4 plex-sans ttu">Giảng Viên</div>
+        <div class="pv4 plex-sans ttu">Lộ Trình Học</div>
+        <div class="pv4 plex-sans ttu">Testimonials</div>
+        <div class="pv4 plex-sans ttu">Q&A</div>
+        <div class="pv4 plex-sans ttu">
+          <span class="white">
+            VN
+          </span>
+          /
+          <span class="white-40">
+            EN
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="">
+      <div
+        style="background-image: url('images/bghero.png');"
+        class="white vh-100 cover"
+      >
+        <!-- FIXED WHITE MENU -->
+        <div
+          class="mobile-menu-white dn-l flex-m flex w-100 bg-white ph4 pv3 items-center justify-between"
+        >
+          <img src="images/nav-logo.svg" class="w25" />
+          <img src="images/blue_bars.svg" class="w2 pointer" />
+        </div>
+        <!-- END FIXED WHITE MENU -->
+
+        <!-- FIXED BLUE MENU -->
+        <div
+          class="mobile-menu-transparent dn-l flex w-100 bg-transparent ph4 pv3 items-center justify-between"
+        >
+          <img src="images/nav-logo-white.svg" class="w3" />
+          <img src="images/white_bars.svg" class="w2 pointer" />
+        </div>
+        <!-- END FIXED BLUE MENU -->
+
+        <!-- desktop menu, giữ nguyên -->
+        <div class="desktop-menu dn dn-m db-l w-100 ph2 ph4-m ph6-l pv4">
+          <div class="flex items-center w-100 justify-between">
+            <div class="flex items-center">
+              <img src="images/logo.png" class="pr4 w3" />
+
+              <ul class="flex list">
+                <li class="ph3-l ph2-m dim pointer menuItem">OBJECTIVES</li>
+                <li class="ph3-l ph2-m dim pointer menuItem">THÀNH TỰU</li>
+                <li class="ph3-l ph2-m dim pointer menuItem">GIẢNG VIÊN</li>
+                <li class="ph3-l ph2-m dim pointer menuItem">LỘ TRÌNH HỌC</li>
+                <li class="ph3-l ph2-m dim pointer menuItem">TESTIMONIALS</li>
+                <li class="ph3-l ph2-m dim pointer menuItem">Q&A</li>
+              </ul>
+            </div>
+
+            <div class="flex items-center">
+              <a href="#" class="link dim white ph2">
+                VI
+              </a>
+              /
+              <a href="#" class="link dim white-40 ph2">
+                EN
+              </a>
+              <div
+                class="pointer dim ml4 flex ttu white items-center tc justify-around btnDangKy"
+                style="width: 202px; height: 51px; border-radius: 10px;"
+              >
+                <p class="f4">
+                  đăng ký ngay
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="mobile-count-down db dn-ns flex justify-center mt5 items-end"
+        >
+          <div class="flex flex-column justify-center items-center">
+            <span class="f5 fw3 db mb2">DAYS</span>
+            <div
+              class="khoiVuong w3 h3 flex justify-center items-center f25 fw6"
+            >
+              00
+            </div>
+          </div>
+
+          <span class="f2 fw6 ph2 mb3">:</span>
+          <div class="flex flex-column justify-center items-center">
+            <span class="f5 fw3 db mb2">HOURS</span>
+            <div
+              class="khoiVuong w3 h3 flex justify-center items-center f25 fw6"
+            >
+              13
+            </div>
+          </div>
+
+          <span class="f2 fw6 ph2 mb3">:</span>
+          <div class="flex flex-column justify-center items-center">
+            <span class="f5 fw3 db mb2">MINUTES</span>
+            <div
+              class="khoiVuong w3 h3 flex justify-center items-center f25 fw6"
+            >
+              24
+            </div>
+          </div>
+
+          <span class="f2 fw6 ph2 mb3">:</span>
+          <div class="flex flex-column justify-center items-center">
+            <span class="f5 fw3 db mb2">SECONDS</span>
+            <div
+              class="khoiVuong w3 h3 flex justify-center items-center f25 fw6"
+            >
+              15
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="desktop-count-down dn flex-ns pv5 justify-center items-center mt5"
+        >
+          <div class="khoiVuong flex justify-center items-center flex-column">
+            <p class="ttu">DAYS</p>
+            <p class="soTo">0</p>
+          </div>
+          <p class="soTo ph3">:</p>
+          <div class="khoiVuong flex justify-center items-center flex-column">
+            <p class="ttu">HOURS</p>
+            <p class="soTo">13</p>
+          </div>
+          <p class="soTo ph3">:</p>
+          <div class="khoiVuong flex justify-center items-center flex-column">
+            <p class="ttu">minutes</p>
+            <p class="soTo">24</p>
+          </div>
+          <p class="soTo ph3">:</p>
+          <div class="khoiVuong flex justify-center items-center flex-column">
+            <p class="ttu">seconds</p>
+            <p class="soTo">15</p>
+          </div>
+        </div>
+
+        <p class="ttu tc f2 heading-m heading-l fw6 center w-90 mt4">
+          Foundation of Machine learning online class
+        </p>
+
+        <p class="description tc w-90 tc w-70-m w-60-l center mv5 f5">
+          Cùng VietAI đón đầu công nghệ với khóa học trực tuyến về Machine
+          Learning (Học Máy) cơ bản với những chuyên gia hàng đầu về trí tuệ
+          nhân tạo đến từ Việt Nam và thung lũng Silicon.
+        </p>
+      </div>
+    </div>
+
+    <!-- BOTTOM ĐĂNG KÝ NGAY -->
+    <div
+      class="mobile-button db dn-ns fixed bottom-0 w-100 pv3 ttu fw5 pointer btnDangKy tc f4 white"
+    >
+      Đăng ký ngay
+    </div>
+
+    <!-- BLOCK DANG KY -->
+    <div class="flex flex-wrap flex-nowrap-l pt4 pb5 pv6-l">
+      <!-- col 1 -->
+      <div class="w-100 mt4 mt5-l w-third-l flex tc mh3 mh4-ns">
+        <p class="hayDangKy center db tc tl-l">
+          HÃY ĐĂNG KÝ KHÓA HỌC MACHINE LEARNING (HỌC MÁY) CƠ BẢN NGAY HÔM NAY!
+        </p>
+      </div>
+      <!-- col 2 -->
+      <div
+        class="w-100 mt4 mt5-l w-third-l mh3 mh4-ns overflow-hidden khungDangKy"
+      >
+        <div class="flex flex-column h-100-l justify-between-l">
+          <div class="khungTieuDeDangKy pv4">
+            <p class="tieuDeDangKy tc">EARLY BIRD</p>
+            <p class="f5 white tc fw2">Đăng ký sớm</p>
+          </div>
+
+          <div class="pv5 pv6-ns tc">
+            <p class="f1 b pv3">
+              2,326,550 <br />
+              VND
+            </p>
+            <p class="f2">(100 USD)</p>
+          </div>
+
+          <div class="ttu tc f2 white b pv3 btnDangKy">
+            ĐĂNG KÝ NGAY
+          </div>
+        </div>
+      </div>
+      <!-- col 3 -->
+      <div
+        class="w-100 mt4 mt5-l w-third-l mh3 mh4-ns overflow-hidden khungDangKy"
+      >
+        <div class="flex flex-column">
+          <div class="khungTieuDeDangKy pv4">
+            <p class="tieuDeDangKy tc">GENERAL ADMISSION</p>
+            <p class="f5 white tc fw2">Đăng ký thường</p>
+          </div>
+
+          <div class="pv5 pv6-ns tc">
+            <p class="f1 b pv3">
+              3,489,825 <br />
+              VND
+            </p>
+            <p class="f2">(150 USD)</p>
+          </div>
+
+          <div class="ttu tc f2 white b pv3 btnDangKy">
+            ĐĂNG KÝ NGAY
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END BLOCK DANG KY -->
+
+    <!-- BLOCK BAN CO BIET -->
+    <div class="w-100 flex flex-wrap white blockBancobiet pv5 fw2">
+      <div class="w-100 w-40-l flex justify-end-l justify-center">
+        <div class="w-90">
+          <p class="tieuDeBanCoBiet mb4 h5-l items-end flex">
+            BẠN CÓ BIẾT?
+          </p>
+
+          <p class="noiDungBanCoBiet mb4">
+            Theo báo cáo 2020 về những việc làm triển vọng của LinkedIn, kỹ sư
+            công nghệ Machine learning (Học Máy) và AI (Trí tuệ nhân tạo) đứng
+            đầu với như cầu tuyển dụng tăng trưởng 75% mỗi năm trong 4 năm gần
+            với mức lương cao mơ ước.
+          </p>
+          <p class="noiDungBanCoBiet mb4">
+            Trong khi đó, nguồn nhân lực chỉ đáp ứng được 10% nhu cầu thị trường
+            Việt Nam
+          </p>
+          <p class="noiDungBanCoBiet mb4">
+            Bạn có sẵn sàng đón đầu cơ hội này cùng VietAI
+          </p>
+
+          <!-- video -->
+          <div class="pv4 center tc">
+            <iframe
+              src="https://www.youtube.com/embed/HJneFoCxxHs"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              class="w-100 h5 h6-m h6-l"
+            ></iframe>
+
+            <p class="pv3 tl noiDungBanCoBiet">
+              Hãy cùng nghe co-founder của VietAI - anh Thắng Lương điểm lại
+              những thành công của học viên đạt được trước đây nhé!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-100 w-60-l">
+        <div class="w-90 w-80-l center lh-copy f5 fw2">
+          <p class="tieuDeBanCoBiet mb4 h5-l items-end flex">
+            VÌ SAO BẠN NÊN HỌC <br />
+            MACHINE LEARNING (HỌC MÁY) <br />
+            TRỰC TUYẾN CÙNG VIET AI?
+          </p>
+
+          <ul class="plist noiDungBanCoBiet">
+            <li class="pv3">
+              Khóa học này dành cho t61t cả mọi người từ sinh viên cho đến kỹ sư
+              ở những lĩnh vực khác nhau.
+            </li>
+            <li class="pv3">
+              Hình thức học trực tuyến vô cùng tiện lợi, bạn có thể học bất cứ
+              đâu và bất cứ khi nào
+            </li>
+            <li class="pv3">
+              Cơ hội áp dụng kiến thức vào những vấn đề gần gũi với cuộc sống
+              hàng này sau mỗi bài giảng
+            </li>
+            <li class="pv3">
+              Khóa học được cập nhật và giảng dạy chương trình mới nhất từ nước
+              ngoài!
+            </li>
+            <li class="pv3">
+              Xây dựng thêm mối quan hệ với những chuyên gia hàng đầu về AI đến
+              từ Việt Nam và thung lũng Silicon
+            </li>
+            <li class="pv3">
+              Cơ hội được giới thiệu và làm việc tại các công ty công nghệ hàng
+              đầu ở trong và ngoài nước
+            </li>
+            <li class="pv3">
+              Chứng chỉ của VietAI được công nhận ở nhiều tổ chức và công ty
+              khác nhau cho quá trình kiếm việc
+            </li>
+            <li class="pv3">
+              Xây dựng nền tảng vững chắc cho những lớp học Deep Learning (Học
+              Sâu) cơ bản và nâng cao của VietAI
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- END BLOCK BAN CO BIET -->
+
+    <!-- BLOCK GIANG VIEN  MOBILE MEDIUM SCREEN-->
+    <div class="blockCoVan pv5 white ph2 db dn-l">
+      <div class="w-90 center">
+        <p class="tieuDe tc center pv3">
+          CỐ VẤN VÀ GIẢNG VIÊN
+        </p>
+        <p class="noiDung tc center pv3">
+          Đội ngũ giảng viên giàu kinh nghiệm của VietAI là những chuyên gia
+          hàng đầu trong lĩnh vự trí tuệ nhân tạo trong và ngoài nước.
+        </p>
+      </div>
+
+      <!-- block nho co van mobile & medium -->
+      <div class="w-100 flex flex-column mt5 db dn-l">
+        <!-- cot tiêu đề -->
+        <div class="w-90 center yellow f2 fw3 tc">
+          Cố Vấn
+        </div>
+        <!-- cột 3 hình -->
+        <div
+          class="w-90 center flex flex-column justify-center items-center mt4"
+        >
+          <div class="w-100 w-80-m relative">
+            <img src="images/advisor_blur.png" alt="" class="w-100 w-80 br3" />
+            <div class="absolute bottom-1 left-0 w-80 ph3">
+              <p class="f4 fw6 pb3">
+                THẮNG LƯƠNG
+              </p>
+              <p class="pyellow fw6 f4">
+                Research Scientis Tại Google Brain
+              </p>
+              <p class="tc pt3">
+                <i class="fa fa-angle-down f2 fw7 yellow"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="w-100 w-80-m mt4">
+            <img src="images/advisor.png" alt="" class="w-100 w-80 br3" />
+          </div>
+
+          <p class="tc pt3">
+            <i class="fa fa-angle-down f2 fw7 white"></i>
+          </p>
+          <div
+            class="w-100 w-80-m flex flex-column bg-white black-90 pv3 ph3 br3 mv4"
+          >
+            <div class="w-100 ph3">
+              <p class="f2 b">TRIẾT TRẦN</p>
+              <p class="chucVuCoVan b pv3">
+                Phó Hiệu Trưởng Trường Đại Học Khoa Học Tự Nhiên, ĐHQG-HCM
+              </p>
+            </div>
+            <div class="w-100 noidungGiangVien noiDung tj ph3">
+              Sau khi nhận bằng tiến sĩ tại Trường Đại Học Khoa học Tự nhiên năm
+              2009, Minh Triết tiếp tục đóng góp trong ngành khoa học và hiện
+              đang là phó giáo sư kiêm phó hiệu trưởng của trường. Anh đã sáng
+              chế và đồng sáng chế 90 bài luận nghiên cứu khoa học và hơn 400
+              trích dẫn từ Google Scholar trong lĩnh vực Computer Vision (Thị
+              Giác Máy Tính), Machine Learning (Học Máy), Virtual Reality (Thực
+              Tế Ảo), và Augmented Reality (Thực Tế Ảo Tăng Cường).
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end block nho co van -->
+    </div>
+
+    <!-- END BLOCK GIANG VIEN  MOBILE MEDIUM-->
+
+    <!-- BLOCK GV DESKTOP -->
+    <div class="blockCoVan pv5 white ph2 dn db-l">
+      <p class="tieuDe tc center pv3">
+        CỐ VẤN VÀ GIẢNG VIÊN
+      </p>
+      <p class="noiDung tc center pv3">
+        Đội ngũ giảng viên giàu kinh nghiệm của VietAI là những chuyên gia hàng
+        đầu trong <br />
+        lĩnh vự trí tuệ nhân tạo trong và ngoài nước.
+      </p>
+
+      <!-- block nho co van -->
+      <div class="w-100 flex mt5">
+        <!-- cot tiêu đề -->
+        <div class="w-25 yellow f2 fw3 tc">
+          Cố Vấn
+        </div>
+        <!-- cột 3 hình -->
+        <div class="w-75 flex flex-wrap">
+          <div class="w-third pr3 relative">
+            <img src="images/advisor_blur.png" alt="" class="w-100 br3" />
+            <div class="absolute bottom-2 left-2">
+              <p class="tenGiangVien pb4">
+                THẮNG LƯƠNG
+              </p>
+              <p class="chucVuGiangVien">
+                Research Scientis Tại Google Brain
+              </p>
+            </div>
+          </div>
+          <div class="w-third ph2">
+            <img src="images/advisor.png" alt="" class="w-100 br3" />
+          </div>
+          <div class="w-third pl3 relative">
+            <img src="images/advisor_blur.png" alt="" class="w-100 br3" />
+            <div class="absolute bottom-2 left-2">
+              <p class="tenGiangVien pb4">
+                THẮNG LƯƠNG
+              </p>
+              <p class="chucVuGiangVien">
+                Research Scientis Tại Google Brain
+              </p>
+            </div>
+          </div>
+          <div class="w-100 flex bg-white black-90 pv4 ph3 br3 mv4">
+            <div class="w-40 ph3">
+              <p class="f2 b">TRIẾT TRẦN</p>
+              <p class="chucVuCoVan b pv3">
+                Phó Hiệu Trưởng Trường Đại Học Khoa Học Tự Nhiên, ĐHQG-HCM
+              </p>
+            </div>
+            <div class="w-60 noidungGiangVien noiDung tl">
+              Sau khi nhận bằng tiến sĩ tại Trường Đại Học Khoa học Tự nhiên năm
+              2009, Minh Triết tiếp tục đóng góp trong ngành khoa học và hiện
+              đang là phó giáo sư kiêm phó hiệu trưởng của trường. Anh đã sáng
+              chế và đồng sáng chế 90 bài luận nghiên cứu khoa học và hơn 400
+              trích dẫn từ Google Scholar trong lĩnh vực Computer Vision (Thị
+              Giác Máy Tính), Machine Learning (Học Máy), Virtual Reality (Thực
+              Tế Ảo), và Augmented Reality (Thực Tế Ảo Tăng Cường).
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end block nho co van -->
+
+      <!-- block nho giang vien -->
+      <div class="w-100 flex mt5">
+        <!-- cot tiêu đề -->
+        <div class="w-25 yellow f2 fw3 tc">
+          Giảng Viên
+        </div>
+
+        <!-- cột 3 hình -->
+        <div class="w-75">
+          <!-- 3 hinh dau tien -->
+          <div class="w-100 flex flex-wrap mb4">
+            <div class="w-third pr3 relative">
+              <img src="images/advisor_blur.png" alt="" class="w-100 br3" />
+              <div class="absolute bottom-2 left-2">
+                <p class="tenGiangVien pb4">
+                  THẮNG lương
+                </p>
+                <p class="chucVuGiangVien">
+                  Research Scientis Tại Google Brain
+                </p>
+              </div>
+            </div>
+
+            <div class="w-third ph2">
+              <img src="images/advisor.png" alt="" class="w-100 br3" />
+            </div>
+            <div class="w-third pl3 relative">
+              <img src="images/advisor_blur.png" alt="" class="w-100 br3" />
+              <div class="absolute bottom-2 left-2">
+                <p class="tenGiangVien pb4">
+                  THẮNG LƯƠNG
+                </p>
+                <p class="chucVuGiangVien">
+                  Research Scientis Tại Google Brain
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 hinh tiep theo -->
+
+          <div class="w-100 flex flex-wrap mb4">
+            <div class="w-third pr3 relative">
+              <img src="images/advisor_blur.png" alt="" class="w-100 br3" />
+              <div class="absolute bottom-2 left-2">
+                <p class="tenGiangVien pb4">
+                  THẮNG lương
+                </p>
+                <p class="chucVuGiangVien">
+                  Research Scientis Tại Google Brain
+                </p>
+              </div>
+            </div>
+
+            <div class="w-third ph2 relative">
+              <img src="images/advisor_blur.png" alt="" class="w-100 br3" />
+              <div class="absolute bottom-2 left-2">
+                <p class="tenGiangVien pb4">
+                  THẮNG LƯƠNG
+                </p>
+                <p class="chucVuGiangVien">
+                  Research Scientis Tại Google Brain
+                </p>
+              </div>
+            </div>
+            <div class="w-third pl3 relative">
+              <img src="images/advisor_blur.png" alt="" class="w-100 br3" />
+              <div class="absolute bottom-2 left-2">
+                <p class="tenGiangVien pb4">
+                  THẮNG LƯƠNG
+                </p>
+                <p class="chucVuGiangVien">
+                  Research Scientis Tại Google Brain
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end block nho giang vien -->
+
+      <!-- block guest lecture -->
+      <div class="w-100 flex mt5">
+        <!-- cot tiêu đề -->
+        <div class="w-25 yellow f2 fw3 tc">
+          Guest Lecture
+        </div>
+
+        <!-- cột 3 hình -->
+        <div class="w-75">
+          <!-- 3 hinh dau tien -->
+          <div class="w-100 flex flex-wrap mb4">
+            <div class="w-third pr3 relative">
+              <img src="images/advisor_blur.png" alt="" class="w-100 br3" />
+              <div class="absolute bottom-2 left-2">
+                <p class="tenGiangVien pb4">
+                  THẮNG lương
+                </p>
+                <p class="chucVuGiangVien">
+                  Research Scientis Tại Google Brain
+                </p>
+              </div>
+            </div>
+
+            <div class="w-third ph2 relative">
+              <img src="images/advisor_blur.png" alt="" class="w-100 br3" />
+              <div class="absolute bottom-2 left-2">
+                <p class="tenGiangVien pb4">
+                  THẮNG lương
+                </p>
+                <p class="chucVuGiangVien">
+                  Research Scientis Tại Google Brain
+                </p>
+              </div>
+            </div>
+            <div class="w-third pl3 relative">
+              <img src="images/advisor_blur.png" alt="" class="w-100 br3" />
+              <div class="absolute bottom-2 left-2">
+                <p class="tenGiangVien pb4">
+                  THẮNG LƯƠNG
+                </p>
+                <p class="chucVuGiangVien">
+                  Research Scientis Tại Google Brain
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- 3 hinh tiep theo -->
+        </div>
+      </div>
+      <!-- end block guest lecture -->
+    </div>
+    <!-- END BLOCK GV DESKTOP -->
+
+    <!-- BLOCK LO TRINH HOC -->
+    <div class="flex flex-wrap flex-column flex-row-l">
+      <!-- kien thuc can co -->
+      <div class="w-100 w-40-l pt3 ph4 pl6-l">
+        <p class="loTrinhHoc f3 mv4">Lộ Trình Học</p>
+        <p class="tieuDeLoTrinhHoc mv4">NHỮNG KIẾN THỨC CẦN CÓ</p>
+        <ul>
+          <li class="mv4 noiDungKienThucCanCo">Lập trình cơ bản.</li>
+          <li class="mv4 noiDungKienThucCanCo">
+            Tích phân và đại số tuyến tính cơ bản.
+          </li>
+        </ul>
+      </div>
+
+      <!-- thời gian hoc 6 tuan -->
+      <div class="w-100 w-60-l pv3 ph4 ph2-l">
+        <p class="tieuDeLoTrinhHoc mv4">
+          THỜI GIAN KHÓA HỌC 6 TUẦN SẼ BAO GỒM
+        </p>
+
+        <!-- <p>dòng lộ trình</p> -->
+
+        <!-- danh cho mobile & medium screen -->
+        <div class="db dn-l">
+          <div class="w-100 ba b--black-50 br3 tc pv3 f3 fw6 pblue">
+            TUAN 1
+          </div>
+
+          <div class="ba b--black-30 pt3 ph3">
+            <div class="bb b--black-10 pv3 f4 ttu black-70 pointer tc">
+              Tuần 1
+            </div>
+            <div class="bb b--black-10 pv3 f4 ttu black-70 pointer tc">
+              Tuần 2
+            </div>
+            <div class="bb b--black-10 pv3 f4 ttu black-70 pointer tc">
+              Tuần 3
+            </div>
+            <div class="bb b--black-10 pv3 f4 ttu black-70 pointer tc">
+              Tuần 4
+            </div>
+            <div class="bb b--black-10 pv3 f4 ttu black-70 pointer tc">
+              Tuần 5
+            </div>
+            <div class="bb b--black-10 pv3 f4 ttu black-70 pointer tc">
+              Tuần 6
+            </div>
+          </div>
+
+          <div class="w-100 flex flex-wrap ph3">
+            <div class="w-100 w-40-l mv4">
+              <p class="b">Mở đầu</p>
+              <p class="noiDung">
+                + ôn tập những thuật toán nền tảng<br />
+                + Lập trình với python<br />
+                * Lập trình với thư viện Numpy <br />
+                * Xử lý dự lie5u với thư viện Pandas <br />
+                * Trực quan hóa dữ liệu với <br />
+                thư viện Matplotlib <br />
+              </p>
+            </div>
+            <div class="w-100 w-40-l flex flex-wrap justify-between">
+              <div class="w-40 ph3 pt4">
+                <img src="./images/hinh0.png" alt="" />
+              </div>
+              <div class="w-40 ph3 pt4">
+                <img src="./images/hinh1.png" alt="" />
+              </div>
+              <div class="w-40 ph3 pt4">
+                <img src="./images/hinh2.png" alt="" />
+              </div>
+              <div class="w-40 ph3 pt4">
+                <img src="./images/hinh3.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END BLOCK LO TRINH HOC -->
+
+    <!-- background nền -->
+    <div class="relative">
+      <div class="absolute vh-75 bg-pgray w-100 top-3 pgray">
+        abc
+      </div>
+    </div>
+    <!-- BLOCK TESTIMONIALS -->
+    <!-- PHẦN LARGE SCREEN -->
+
+    <div class="mv5 relative dn db-l">
+      <div class="w-100">
+        <div class="w-80 flex center">
+          <!-- hoc vien 1 -->
+          <div class="w-third ph4 white">
+            <div class="bg-dark-blue br3 pv4 ph3 relative">
+              <p class="noiDungTestimonial tc pt5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci laboriosam et esse praesentium quam fuga tenetur nihil
+                quasi, autem at explicabo ducimus! Quas inventore neque officia
+                ipsa. Nam, enim. Nulla!
+              </p>
+              <p class="tenHocVien pv3 tc">NGUYỄN BÁ NGỌC</p>
+              <p class="tc f6 fw2">Học Viên VietAI #1</p>
+              <p class="tc hocVienHienLa w-60 center pv3">
+                Hiện là VietAI HANOI Leader / ProtonX Founder
+              </p>
+              <div class="viTriHinhHocVien w-100 tc">
+                <img
+                  src="images/hocvien.png"
+                  alt=""
+                  class="w4 br-100 ba bw3 b--white"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- end hoc vien 1 -->
+
+          <!-- hoc vien 2 -->
+          <div class="w-third ph4 white">
+            <div class="bg-dark-blue br3 pv4 ph3 relative">
+              <p class="noiDungTestimonial tc pt5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci laboriosam et esse praesentium quam fuga tenetur nihil
+                quasi, autem at explicabo ducimus! Quas inventore neque officia
+                ipsa. Nam, enim. Nulla!
+              </p>
+              <p class="tenHocVien pv3 tc">NGUYỄN BÁ NGỌC</p>
+              <p class="tc f6 fw2">Học Viên VietAI #1</p>
+              <p class="tc hocVienHienLa w-60 center pv3">
+                Hiện là VietAI HANOI Leader / ProtonX Founder
+              </p>
+              <div class="viTriHinhHocVien w-100 tc">
+                <img
+                  src="images/hocvien.png"
+                  alt=""
+                  class="w4 br-100 ba bw3 b--white"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- end hoc vien 2 -->
+
+          <!-- hoc vien 3 -->
+          <div class="w-third ph4 white">
+            <div class="bg-dark-blue br3 pv4 ph3 relative">
+              <p class="noiDungTestimonial tc pt5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci laboriosam et esse praesentium quam fuga tenetur nihil
+                quasi, autem at explicabo ducimus! Quas inventore neque officia
+                ipsa. Nam, enim. Nulla!
+              </p>
+              <p class="tenHocVien pv3 tc">NGUYỄN BÁ NGỌC</p>
+              <p class="tc f6 fw2">Học Viên VietAI #1</p>
+              <p class="tc hocVienHienLa w-60 center pv3">
+                Hiện là VietAI HANOI Leader / ProtonX Founder
+              </p>
+              <div class="viTriHinhHocVien w-100 tc">
+                <img
+                  src="images/hocvien.png"
+                  alt=""
+                  class="w4 br-100 ba bw3 b--white"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- end hoc vien 3 -->
+        </div>
+      </div>
+
+      <!-- Khoi hinh -->
+      <div class="w-100 tr z-999">
+        <img src="images/nhom_hoc_vien.png" alt="" class="w-80 mv5 z-2" />
+      </div>
+    </div>
+
+    <!-- PHẦN MOBILE & MEDIUM SCREEN -->
+    <div class="mv5 relative db dn-l z-999">
+      <div class="w-100 mb4">
+        <!-- hoc vien 1 -->
+        <div class="w-100 w-50-m ph4 white mt5">
+          <div class="bg-dark-blue br3 pv4 ph3 relative">
+            <p class="noiDungTestimonial tc pt5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              laboriosam et esse praesentium quam fuga tenetur nihil quasi,
+              autem at explicabo ducimus! Quas inventore neque officia ipsa.
+              Nam, enim. Nulla!
+            </p>
+            <p class="tenHocVien pv3 tc">NGUYỄN BÁ NGỌC</p>
+            <p class="tc f6 fw2">Học Viên VietAI #1</p>
+            <p class="tc hocVienHienLa w-60 center pv3">
+              Hiện là VietAI HANOI Leader / ProtonX Founder
+            </p>
+            <div class="viTriHinhHocVien w-100 tc">
+              <img
+                src="images/hocvien.png"
+                alt=""
+                class="w4 br-100 ba bw3 b--white"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- end hoc vien 1 -->
+      </div>
+
+      <!-- Khoi hinh -->
+      <div class="w-100 tc">
+        <img src="images/nhom_hoc_vien_mobile.png" alt="" class="w-90 center" />
+      </div>
+    </div>
+    <!-- END BLOCK TESTIMONIALS -->
+
+    <!-- BLOCK THANH TUU -->
+    <div class="flex justify-end mt5">
+      <div class="w-100 w-80-l flex flex-wrap">
+        <!-- text -->
+        <div class="w-100 w-50-l ph4 ph5-l pv3">
+          <p class="tieuDeThanhTuu tl">
+            Thành tựu của <br />
+            học viên Viet AI
+          </p>
+          <p class="thanhTuu mv4">
+            57% học viên của VietAI chuyển ngành và theo đuổi công việc trong
+            ngành trí tuệ nhân tạo. <br />
+            Học viên từ khóa đầu tiên của VietAI đã thắng giải nhất tại cuộc thi
+            Southeast Asia Machine Learning School. <br />
+            Nhiều học viên của VietAI đã từng đoạt giải nhất qua những cuộc thi
+            lập trình về máy học và trí tuệ nhân tạo trên Kaggle (trang cộng
+            đồng lớn nhất thế giới củ những nhà khoa học dữ liệu.)
+          </p>
+        </div>
+
+        <!-- images -->
+        <div class="w-100 w-50-l ph4 ph5-l">
+          <img src="images/2_hoc_vien.png" alt="" class="w-100" />
+        </div>
+      </div>
+    </div>
+    <!-- END BLOCK THANH TUU -->
+
+    <!-- BLOCK PARTNER -->
+    <div class="w-100 tc">
+      <p class="tieuDePartners pv4">
+        PARTNERS
+      </p>
+      <div class="pv3 flex flex-wrap justify-around">
+        <img src="images/logo1.png" class="w-40 w-30-m w-10-l mv3" />
+        <img src="images/logo2.png" class="w-40 w-30-m w-10-l mv3" />
+        <img src="images/logo3.png" class="w-40 w-30-m w-10-l mv3" />
+        <img src="images/logo1.png" class="w-40 w-30-m w-10-l mv3" />
+        <img src="images/logo2.png" class="w-40 w-30-m w-10-l mv3" />
+        <img src="images/logo3.png" class="w-40 w-30-m w-10-l mv3" />
+      </div>
+    </div>
+    <!-- END BLOCK PARTNER -->
+
+    <!-- BLOCK HOI DAP -->
+    <div class="w-100 pv5 flex justify-center flex-wrap">
+      <div
+        class="w-90 pv2 ph3 ba b--yellow flex justify-between items-center pointer cauHoi mb3"
+      >
+        <p>
+          Quy trình đăng ký như thế nào?
+        </p>
+        <i class="fa fa-angle-down fw7 f2 black-70"></i>
+      </div>
+
+      <div
+        class="w-90 pv2 ph3 ba b--yellow flex justify-between items-center pointer cauHoiActive mb0"
+      >
+        <p>
+          Tiêu chí xét tuyển như thế nào?
+        </p>
+        <i class="fa fa-angle-down fw7 f2 white"></i>
+      </div>
+
+      <div class="w-90 pv2 ph3 b--black-10 black-90 cauTraLoi ba mb3">
+        <!-- <div class="w-80 ph4 mb3  b--black-10 black-90 cauTraLoi ba pv3 anCauTraLoi"> -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+        autem possimus molestias velit cupiditate sed, asperiores iusto illum
+        mollitia voluptatibus ad repellendus repudiandae ab, excepturi obcaecati
+        rem delectus commodi tempore. Lorem ipsum dolor sit amtio autem possimus
+        molestias velit cupiditate sed, asperiores iusto illum mollitia
+        voluptatibus ad repellendus repudiandae ab, excepturi obcaecati rem
+        delectus commodi tempore.
+        <br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+        autem possimus molestias velit cupiditate sed, asperiores iusto illum
+        mollitia voluptatibus ad repellendus repudiandae ab, excepturi obcaecati
+        rem delectus commodi tempore. Lorem ipsum dolor sit amtio autem possimus
+        molestias velit cupiditate sed, asperiores iusto illum mollitia
+        voluptatibus ad repellendus repudiandae ab, excepturi obcaecati rem
+        delectus commodi tempore.
+      </div>
+
+      <div
+        class="w-90 pv2 ph3 ba b--yellow mb3 flex justify-between items-center pointer"
+      >
+        <p class="cauHoi">
+          Tiêu chí xét tuyển như thế nào?
+        </p>
+        <i class="fa fa-angle-down fw7 f2 black-70"></i>
+      </div>
+
+      <div
+        class="w-90 pv2 ph3 ba b--yellow mb3 flex justify-between items-center pointer"
+      >
+        <p class="cauHoi">
+          Đóng tiền học như thế nào?
+        </p>
+        <i class="fa fa-angle-down fw7 f2 black-70"></i>
+      </div>
+
+      <div
+        class="w-90 pv2 ph3 ba b--yellow mb3 flex justify-between items-center pointer"
+      >
+        <p class="cauHoi">
+          VietAI có học bổng không
+        </p>
+        <i class="fa fa-angle-down fw7 f2 black-70"></i>
+      </div>
+
+      <div
+        class="w-90 pv2 ph3 ba b--yellow mb3 flex justify-between items-center pointer"
+      >
+        <p class="cauHoi">
+          Nhận chứng chỉ của VietAI như thế nào?
+        </p>
+        <i class="fa fa-angle-down fw7 f2 black-70"></i>
+      </div>
+
+      <div
+        class="w-90 pv2 ph3 ba b--yellow mb3 flex justify-between items-center pointer"
+      >
+        <p class="cauHoi">
+          Cần biết trước về Machine Learning không?
+        </p>
+        <i class="fa fa-angle-down fw7 f2 black-70"></i>
+      </div>
+
+      <div
+        class="w-90 pv2 ph3 ba b--yellow mb3 flex justify-between items-center pointer"
+      >
+        <p class="cauHoi">
+          Mình cần học toán đến mức nào?
+        </p>
+        <i class="fa fa-angle-down fw7 f2 black-70"></i>
+      </div>
+
+      <div
+        class="w-90 pv2 ph3 ba b--yellow mb3 flex justify-between items-center pointer"
+      >
+        <p class="cauHoi">
+          Cần biết lập trình không?
+        </p>
+        <i class="fa fa-angle-down fw7 f2 black-70"></i>
+      </div>
+
+      <div
+        class="w-90 pv2 ph3 ba b--yellow mb3 flex justify-between items-center pointer"
+      >
+        <p class="cauHoi">
+          Khóa học có thích hợp với khoa học dữ liệu không?
+        </p>
+        <i class="fa fa-angle-down fw7 f2 black-70"></i>
+      </div>
+    </div>
+    <!-- END BLOCK HOI DAP -->
+
+    <!-- FOOTER -->
+    <div class="w-100 pv3 ph5 bg-dark-gray white flex justify-between h4">
+      <img
+        src="images/logo.png"
+        style="width: 59px; height: 66px;"
+        class="pr4"
+      />
+      <div class="lh-copy h-100 flex flex-column justify-between items-end">
+        <div class="">
+          <i class="fa fa-instagram f3 pl4"></i>
+          <i class="fa fa-twitter f3 pl4"></i>
+          <i class="fa fa-facebook f3 pl4"></i>
+        </div>
+        <p class="copyright">Copyright 2010 @ VietAI</p>
+      </div>
+    </div>
+  </body>
+</html>

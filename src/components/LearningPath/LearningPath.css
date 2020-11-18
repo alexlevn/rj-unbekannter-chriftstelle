@@ -1,0 +1,25 @@
+.learning_path ul {
+  margin-left: 20;
+  list-style: none;
+}
+
+.learning_path li {
+  margin-top: 16;
+}
+
+.learning_path ul li::before {
+  content: '+';
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.learning_path ul ul li::before {
+  content: '\2022';
+}
+
+.noiDung {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+}

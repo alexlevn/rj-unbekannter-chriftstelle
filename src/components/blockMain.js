@@ -3,7 +3,7 @@ import '../App.css';
 import '../tachyons.min.css';
 import Countdown from 'react-countdown';
 
-const HtmlMain = ({ d, h, m, s }) => (
+const HtmlMain = ({ d, h, m, s, code }) => (
   <div style={HtmlMainStyle} className="white vh-100 cover">
     {/* COUNT DOWN FOR MOBILE & MEIDUM SCREEN */}
     <div className="mobile-count-down db dn-ns flex justify-center mt5 items-end">
@@ -70,17 +70,17 @@ const HtmlMain = ({ d, h, m, s }) => (
       (Học Máy) cơ bản với những chuyên gia hàng đầu về trí tuệ nhân tạo đến từ
       Việt Nam và thung lũng Silicon.
       <br />
-      Date: November 23, 2020
+      {code && code === 'fpt' ? 'Date: November 28, 2020' : 'Date: November 23, 2020'}
     </div>
   </div>
 );
 
-const BlockMain = ({ timeToStart }) => {
+const BlockMain = ({ timeToStart, code }) => {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
-      return <HtmlMain d={0} h={0} m={0} s={0} />;
+      return <HtmlMain d={0} h={0} m={0} s={0} code={code}/>;
     } else {
-      return <HtmlMain d={days} h={hours} m={minutes} s={seconds} />;
+      return <HtmlMain d={days} h={hours} m={minutes} s={seconds} code={code} />;
     }
   };
 

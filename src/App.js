@@ -40,7 +40,7 @@ export default class App extends React.Component {
 
   render() {
     const code = this.state.code;
-
+    
     return (
       <div className="app-container">
         <NavBar
@@ -49,7 +49,7 @@ export default class App extends React.Component {
           registerLink={data.register_link}
         />
         <div className="app-content">
-          <BlockMain timeToStart={data.countdown.time_to_start} />
+          <BlockMain timeToStart={data.countdown.time_to_start} code={code} />
           <BlockBanCoBiet id={data.menu.objectives.id} />
           <BlockCoVanGiangVien
             advisors={data.advisors}

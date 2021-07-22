@@ -70,7 +70,9 @@ const HtmlMain = ({ d, h, m, s, code }) => (
       (Học Máy) cơ bản với những chuyên gia hàng đầu về trí tuệ nhân tạo đến từ
       Việt Nam và thung lũng Silicon.
       <br />
-      {code && code === 'fpt' ? 'Date: November 28, 2020' : 'Date: November 23, 2020'}
+      {/* option for private aff code */}
+      {/* {code && code === 'fpt' ? 'Date: August 8, 2021' : 'Date: August 8, 2021'} */}
+      {'Date: August 8, 2021'}
     </div>
   </div>
 );
@@ -78,9 +80,11 @@ const HtmlMain = ({ d, h, m, s, code }) => (
 const BlockMain = ({ timeToStart, code }) => {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
-      return <HtmlMain d={0} h={0} m={0} s={0} code={code}/>;
+      return <HtmlMain d={0} h={0} m={0} s={0} code={code} />;
     } else {
-      return <HtmlMain d={days} h={hours} m={minutes} s={seconds} code={code} />;
+      return (
+        <HtmlMain d={days} h={hours} m={minutes} s={seconds} code={code} />
+      );
     }
   };
 

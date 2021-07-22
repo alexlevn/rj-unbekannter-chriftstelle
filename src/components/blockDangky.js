@@ -20,8 +20,8 @@ const BlockDangKy = ({ id, registerLink, aff }) => {
             HÃY ĐĂNG KÝ KHÓA HỌC MACHINE LEARNING (HỌC MÁY) CƠ BẢN NGAY HÔM NAY!
             <br />
             {aff ? null : (
-              <span class="f5 f4-ns black-50 fw5 lh-copy ttu">
-                Đăng ký sớm trước 23h59p ngày 21/11/2020.
+              <span className="f5 f4-ns black-50 fw5 lh-copy ttu">
+                Đăng ký sớm trước 23h59p ngày 30/7/2021.
               </span>
             )}
           </p>

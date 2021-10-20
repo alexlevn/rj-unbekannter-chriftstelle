@@ -48,7 +48,7 @@ const BlockDangKy = ({ id, registerLink, aff }) => {
 
             <div className="pv5 pv6-ns tc">
               <p className="f1 b pv3">
-                2,990,000 <br />
+                2,999,000 <br />
                 VND
               </p>
               {/* <p className="f2">(100 USD)</p> */}
@@ -71,7 +71,7 @@ const BlockDangKy = ({ id, registerLink, aff }) => {
 
             <div className="pv5 pv6-ns tc">
               <p className="f1 b pv3">
-                3,480,000 <br />
+                3,500,000 <br />
                 VND
               </p>
               {/* <p className="f2">(150 USD)</p> */}

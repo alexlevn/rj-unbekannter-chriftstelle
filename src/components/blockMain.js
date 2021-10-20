@@ -6,7 +6,7 @@ import Countdown from 'react-countdown';
 const HtmlMain = ({ d, h, m, s, code }) => (
   <div style={HtmlMainStyle} className="white vh-100 cover">
     {/* COUNT DOWN FOR MOBILE & MEIDUM SCREEN */}
-    <div className="mobile-count-down db dn-ns flex justify-center mt5 items-end">
+    <div className="mobile-count-down db dn-ns flex justify-center mt4 items-end">
       <div className="flex flex-column justify-center items-center">
         <span className="f6 fw3 db mb2">DAYS</span>
         <div className="khoiVuong w3 h3 flex justify-center items-center f25 fw6">
@@ -40,7 +40,7 @@ const HtmlMain = ({ d, h, m, s, code }) => (
     </div>
 
     {/* COUNT DOWN FOR LARGE SCREEN */}
-    <div className="desktop-count-down dn flex-ns pv5 justify-center items-center mt5">
+    <div className="desktop-count-down dn flex-ns pv4 justify-center items-center mt4">
       <div className="khoiVuong flex justify-center items-center flex-column">
         <p className="ttu">DAYS</p>
         <p className="soTo">{d}</p>
@@ -65,14 +65,14 @@ const HtmlMain = ({ d, h, m, s, code }) => (
     <p className="ttu tc heading-m heading-l heading fw6 center w-90 mt4">
       Foundation of Machine learning online class
     </p>
-    <div className="description tc w-90 tc w-70-m w-60-l center mv5 f5">
+    <div className="description tc w-90 tc w-70-m w-60-l center mv4 f5">
       Cùng VietAI đón đầu công nghệ với khóa học trực tuyến về Machine Learning
       (Học Máy) cơ bản với những chuyên gia hàng đầu về trí tuệ nhân tạo đến từ
       Việt Nam và thung lũng Silicon.
       <br />
       {/* option for private aff code */}
       {/* {code && code === 'fpt' ? 'Date: August 8, 2021' : 'Date: August 8, 2021'} */}
-      {'Date: August 8, 2021'}
+      {'Date: November 8, 2021'}
     </div>
   </div>
 );

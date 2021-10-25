@@ -117,7 +117,8 @@ const BlockLargeScreen = ({ advisors, lecturers, guestLecturers }) => {
 
         <div className="w-75">
           <div className="w-100 flex flex-wrap mb4">
-            <div className="w-third pr3 relative">
+            
+            <div className="w-third ph2 relative">
               <Lecture
                 item={lecturers[0]}
                 isSelected={lecturers[0].id === selectedLecture}
@@ -131,15 +132,30 @@ const BlockLargeScreen = ({ advisors, lecturers, guestLecturers }) => {
                 onSelectLecture={handleSelectLecture}
               />
             </div>
-            <div className="w-third pl3 relative">
+
+            {[2, 3].includes(selectedLecture) ? (
+              <LectureDescription item={arrAll[selectedLecture]} />
+            ) : null}
+          </div>
+
+
+          <div className="w-100 flex flex-wrap mb4">
+            <div className="w-third ph2 relative">
               <Lecture
                 item={lecturers[2]}
                 isSelected={lecturers[2].id === selectedLecture}
                 onSelectLecture={handleSelectLecture}
               />
             </div>
-
-            {[2, 3, 4].includes(selectedLecture) ? (
+            <div className="w-third ph2 relative">
+              <Lecture
+                item={lecturers[3]}
+                isSelected={lecturers[3].id === selectedLecture}
+                onSelectLecture={handleSelectLecture}
+              />
+            </div>
+            
+            {[4, 5].includes(selectedLecture) ? (
               <LectureDescription item={arrAll[selectedLecture]} />
             ) : null}
           </div>

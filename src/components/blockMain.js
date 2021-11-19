@@ -72,7 +72,7 @@ const HtmlMain = ({ d, h, m, s, code }) => (
       <br />
       {/* option for private aff code */}
       {/* {code && code === 'fpt' ? 'Date: August 8, 2021' : 'Date: August 8, 2021'} */}
-      {'Date: November 8, 2021'}
+      {'Date: November 27, 2021'}
     </div>
   </div>
 );

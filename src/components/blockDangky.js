@@ -21,7 +21,7 @@ const BlockDangKy = ({ id, registerLink, aff }) => {
             <br />
             {aff ? null : (
               <span className="f5 f4-ns black-50 fw5 lh-copy ttu">
-                Đăng ký sớm trước 23h59p ngày 27/10/2021.
+                Đăng ký sớm trước 23h59p ngày 27/11/2021.
               </span>
             )}
           </p>

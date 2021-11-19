@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from 'react';
-import '../../App.css';
-import '../../tachyons.min.css';
-import './styles.css';
+import React, { useState } from 'react'
+import '../../App.css'
+import '../../tachyons.min.css'
+import './styles.css'
 
 const Lecture = ({ item, isSelected, onSelectLecture }) => {
   if (!item) {
-    return null;
+    return null
   }
 
   return (
@@ -41,8 +41,8 @@ const Lecture = ({ item, isSelected, onSelectLecture }) => {
         </p>
       ) : null}
     </>
-  );
-};
+  )
+}
 
 const LectureDescription = ({ item }) => (
   <div className="w-100 flex bg-white black-90 pv3 ph3 br3 mv3">
@@ -62,16 +62,16 @@ const LectureDescription = ({ item }) => (
       }}
     />
   </div>
-);
+)
 
 const BlockLargeScreen = ({ advisors, lecturers, guestLecturers }) => {
-  const arrAll = [...advisors, ...lecturers, ...guestLecturers];
+  const arrAll = [...advisors, ...lecturers, ...guestLecturers]
 
-  const [selectedLecture, setSelectedLecture] = useState(0);
+  const [selectedLecture, setSelectedLecture] = useState(0)
 
   const handleSelectLecture = (id) => {
-    setSelectedLecture(id === selectedLecture ? null : id);
-  };
+    setSelectedLecture(id === selectedLecture ? null : id)
+  }
 
   return (
     <div className="blockCoVan pv6 white ph2  dn db-l">
@@ -117,8 +117,22 @@ const BlockLargeScreen = ({ advisors, lecturers, guestLecturers }) => {
 
         <div className="w-75">
           <div className="w-100 flex flex-wrap mb4">
-            
+            {/* <div className="w-third ph2 relative">
+              <Lecture
+                item={lecturers[0]}
+                isSelected={lecturers[0].id === selectedLecture}
+                onSelectLecture={handleSelectLecture}
+              />
+            </div>
             <div className="w-third ph2 relative">
+              <Lecture
+                item={lecturers[1]}
+                isSelected={lecturers[1].id === selectedLecture}
+                onSelectLecture={handleSelectLecture}
+              />
+            </div> */}
+
+            <div className="w-third pr3 relative">
               <Lecture
                 item={lecturers[0]}
                 isSelected={lecturers[0].id === selectedLecture}
@@ -132,14 +146,22 @@ const BlockLargeScreen = ({ advisors, lecturers, guestLecturers }) => {
                 onSelectLecture={handleSelectLecture}
               />
             </div>
+            <div className="w-third pl3 relative">
+              <Lecture
+                item={lecturers[2]}
+                isSelected={lecturers[2].id === selectedLecture}
+                onSelectLecture={handleSelectLecture}
+              />
+            </div>
 
-            {[2, 3].includes(selectedLecture) ? (
+            {[2, 3, 4].includes(selectedLecture) ? (
               <LectureDescription item={arrAll[selectedLecture]} />
             ) : null}
           </div>
 
+          {/* THƯ NGUYEN -- KIEN HUYNH */}
 
-          <div className="w-100 flex flex-wrap mb4">
+          {/* <div className="w-100 flex flex-wrap mb4">
             <div className="w-third ph2 relative">
               <Lecture
                 item={lecturers[2]}
@@ -158,7 +180,7 @@ const BlockLargeScreen = ({ advisors, lecturers, guestLecturers }) => {
             {[4, 5].includes(selectedLecture) ? (
               <LectureDescription item={arrAll[selectedLecture]} />
             ) : null}
-          </div>
+          </div> */}
 
           {/* HÒA LÊ
           Sinh Nguyen */}
@@ -225,7 +247,7 @@ const BlockLargeScreen = ({ advisors, lecturers, guestLecturers }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default BlockLargeScreen;
+export default BlockLargeScreen

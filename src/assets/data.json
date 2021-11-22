@@ -91,20 +91,6 @@
       "image": "gl_phongnguyen.jpg",
       "title": "Visiting Researcher tại Mila - Quebec Artificial Intelligence Institute",
       "description": "Phong hiện đang là Visiting Researcher tại viện nghiên cứu Trí Tuệ Nhân Tạo Mila ở Quebec dưới sự chỉ đạo của giáo sư Yoshua Bengio - người từng đạt giải thưởng A.M Turing năm 2018 (giải thưởng được trao bởi Hiệp hội Khoa học Máy tính và được coi như là giải Nobel cho lĩnh vực khoa học máy tính). Tại Mila, anh cùng 2 giáo sư Yoshua Bengio và Aaron Courville nghiên cứu nhiều dự án về Disentanglement (Phân Tách Đặc Trưng), Anomaly Detection (Phát Hiện Bất Thường), và Reinforcement Learning (Học Tăng Cường). Trước đây, anh nhận bằng thạc sĩ tại trường đại học Carnegie Mellon năm 2013. Sau đó, anh Phong đã có 7 năm kinh nghiệm làm việc với vai trò là nhà nghiên cứu Trí Tuệ Nhân Tạo cho Hitachi, trụ sở tại Tokyo, Nhật Bản.<br/><br/>Nghiên cứu của anh tập trung vào Machine Learning (Máy Học) cho Human Activity Recognition (Nhận Dạng Hành Động), và điều khiển tự động cho nhiều ngành khác nhau như nông nghiệp, robot, vân vân. Anh Phong cũng đang đóng vai trò là người tư vấn cho những chiến lược xây dựng ngành Trí Tuệ Nhân Tạo và thu hút nhân tài tại Việt Nam."
-    },
-    {
-      "id": 6,
-      "name": "Ngọc Trần",
-      "image": "gl_ngoctran.jpg",
-      "title": "Nghiên cứu sinh Tiến sỹ của Cold Spring Harbor Laboratory<br/>",
-      "description": "Ngọc Trần hiện đang là Nghiên cứu sinh Tiến sỹ của Cold Spring Harbor Laboratory. Chuyên nghiên cứu về học máy áp dụng cho lĩnh vực khoa học thần kinh (ML in neuroscience), lý thuyết hệ khứu giác (Olfaction Theory) và Học tăng cường (Reinforcement learning). Nghiên cứu của chị đã được đăng trên hội nghị Machine Learning quốc tế lần thứ 36 (ICML 2019)"
-    },
-    {
-      "id": 7,
-      "name": "Khánh Nguyễn",
-      "image": "gl_khanhnguyen.jpg",
-      "title": "Nghiên cứu sinh Tiến sỹ tại Đại học Maryland, College Park<br/>",
-      "description": "Nguyễn Xuân Khánh hiện đang là nghiên cứu sinh tiến sĩ tại trường đại học Maryland, Hoa Kỳ. Nghiên cứu của anh tập trung vào việc tận dụng khả năng đọc hiểu ngôn ngữ tự nhiên (NLP) để giúp trí tuệ nhân tạo tương tác một cách thông minh với con người và môi trường xung quanh. Các công trình nghiên cứu của Khánh về thiết kế robot có khả năng yêu cầu trợ giúp của con người đã được xuất bản trên các hội nghị quốc tế như CVPR và EMNLP. Hiện anh đang hợp tác với Microsoft Research và đại học Carnegie Mellon (CMU) để đưa các mô hình học mới dựa trên giao tiếp bằng ngôn ngữ."
     }
   ],
   "testimonials": [
@@ -183,11 +169,27 @@
     "linkedin": "https://www.linkedin.com/company/vietai/",
     "facebook": "https://www.facebook.com/vietaipublic"
   },
-  "comments": {
-    "id": 4,
-    "name": "Thư Nguyễn",
-    "image": "lt_thunguyen.jpg",
-    "title": "Cựu Resident tại VinAI Research<br/>",
-    "description": "Nghiên cứu sinh tại phòng thí nghiệm Công nghệ Phần mềm tại Trường Đại học Công nghệ Thông tin ĐHQG TP.HCM. Anh Thư rất đam mê việc áp dụng Deep Learning (Học Sâu) vào xây dựng hệ thống xử lý ngôn ngữ. Không chỉ vậy, anh còn rất tích cực trong việc học những kiến thức mới và xây dựng sản phẩm công nghệ."
-  }
+  "comments": [
+    {
+      "id": 4,
+      "name": "Thư Nguyễn",
+      "image": "lt_thunguyen.jpg",
+      "title": "Cựu Resident tại VinAI Research<br/>",
+      "description": "Nghiên cứu sinh tại phòng thí nghiệm Công nghệ Phần mềm tại Trường Đại học Công nghệ Thông tin ĐHQG TP.HCM. Anh Thư rất đam mê việc áp dụng Deep Learning (Học Sâu) vào xây dựng hệ thống xử lý ngôn ngữ. Không chỉ vậy, anh còn rất tích cực trong việc học những kiến thức mới và xây dựng sản phẩm công nghệ."
+    },
+    {
+      "id": 6,
+      "name": "Ngọc Trần",
+      "image": "gl_ngoctran.jpg",
+      "title": "Nghiên cứu sinh Tiến sỹ của Cold Spring Harbor Laboratory<br/>",
+      "description": "Ngọc Trần hiện đang là Nghiên cứu sinh Tiến sỹ của Cold Spring Harbor Laboratory. Chuyên nghiên cứu về học máy áp dụng cho lĩnh vực khoa học thần kinh (ML in neuroscience), lý thuyết hệ khứu giác (Olfaction Theory) và Học tăng cường (Reinforcement learning). Nghiên cứu của chị đã được đăng trên hội nghị Machine Learning quốc tế lần thứ 36 (ICML 2019)"
+    },
+    {
+      "id": 7,
+      "name": "Khánh Nguyễn",
+      "image": "gl_khanhnguyen.jpg",
+      "title": "Nghiên cứu sinh Tiến sỹ tại Đại học Maryland, College Park<br/>",
+      "description": "Nguyễn Xuân Khánh hiện đang là nghiên cứu sinh tiến sĩ tại trường đại học Maryland, Hoa Kỳ. Nghiên cứu của anh tập trung vào việc tận dụng khả năng đọc hiểu ngôn ngữ tự nhiên (NLP) để giúp trí tuệ nhân tạo tương tác một cách thông minh với con người và môi trường xung quanh. Các công trình nghiên cứu của Khánh về thiết kế robot có khả năng yêu cầu trợ giúp của con người đã được xuất bản trên các hội nghị quốc tế như CVPR và EMNLP. Hiện anh đang hợp tác với Microsoft Research và đại học Carnegie Mellon (CMU) để đưa các mô hình học mới dựa trên giao tiếp bằng ngôn ngữ."
+    }
+  ]
 }

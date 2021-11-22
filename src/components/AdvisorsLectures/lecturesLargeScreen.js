@@ -225,7 +225,8 @@ const BlockLargeScreen = ({ advisors, lecturers, guestLecturers }) => {
                 onSelectLecture={handleSelectLecture}
               />
             </div>
-            <div className="w-third ph2 relative">
+
+            {/* <div className="w-third ph2 relative">
               <Lecture
                 item={guestLecturers[1]}
                 isSelected={guestLecturers[1].id === selectedLecture}
@@ -238,9 +239,13 @@ const BlockLargeScreen = ({ advisors, lecturers, guestLecturers }) => {
                 isSelected={guestLecturers[2].id === selectedLecture}
                 onSelectLecture={handleSelectLecture}
               />
-            </div>
+            </div> */}
 
-            {[5, 6, 7].includes(selectedLecture) ? (
+            {/* {[5, 6, 7].includes(selectedLecture) ? (
+              <LectureDescription item={arrAll[selectedLecture]} />
+            ) : null} */}
+
+            {[5].includes(selectedLecture) ? (
               <LectureDescription item={arrAll[selectedLecture]} />
             ) : null}
           </div>

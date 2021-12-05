@@ -4,7 +4,6 @@ import BlockMobile from './lecturesMobile';
 import BlockLargeScreen from './lecturesLargeScreen';
 
 const BlockCoVanGiangVien = ({ advisors, lecturers, guestLecturers, id }) => {
-  console.log('lecturers = ', lecturers);
   return (
     <>
       <div id={id} />

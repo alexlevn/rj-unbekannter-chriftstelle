@@ -70,8 +70,6 @@ const LectureDescription = ({ item }) => {
 
 const BlockLargeScreen = ({ advisors, lecturers, guestLecturers }) => {
   const arrAll = [...advisors, ...lecturers, ...guestLecturers]
-  console.log('arrAll = ', arrAll)
-
   const [selectedLecture, setSelectedLecture] = useState(0)
 
   const handleSelectLecture = (id) => {
@@ -132,26 +130,10 @@ const BlockLargeScreen = ({ advisors, lecturers, guestLecturers }) => {
       <div className="w-100 flex mt5">
         <div className="w-25 flex justify-center yellow f2 fw3">
           <div className="tl dib">Giảng Viên</div>
-          <div>test: {selectedLecture}</div>
         </div>
 
         <div className="w-75">
           <div className="w-100 flex flex-wrap mb4">
-            {/* <div className="w-third ph2 relative">
-              <Lecture
-                item={lecturers[0]}
-                isSelected={lecturers[0].id === selectedLecture}
-                onSelectLecture={handleSelectLecture}
-              />
-            </div>
-            <div className="w-third ph2 relative">
-              <Lecture
-                item={lecturers[1]}
-                isSelected={lecturers[1].id === selectedLecture}
-                onSelectLecture={handleSelectLecture}
-              />
-            </div> */}
-
             <div className="w-third pr3 relative">
               <Lecture
                 item={lecturers[0]}
@@ -180,52 +162,6 @@ const BlockLargeScreen = ({ advisors, lecturers, guestLecturers }) => {
               />
             ) : null}
           </div>
-
-          {/* THƯ NGUYEN -- KIEN HUYNH */}
-
-          {/* <div className="w-100 flex flex-wrap mb4">
-            <div className="w-third ph2 relative">
-              <Lecture
-                item={lecturers[2]}
-                isSelected={lecturers[2].id === selectedLecture}
-                onSelectLecture={handleSelectLecture}
-              />
-            </div>
-            <div className="w-third ph2 relative">
-              <Lecture
-                item={lecturers[3]}
-                isSelected={lecturers[3].id === selectedLecture}
-                onSelectLecture={handleSelectLecture}
-              />
-            </div>
-            
-            {[4, 5].includes(selectedLecture) ? (
-              <LectureDescription item={arrAll[selectedLecture]} />
-            ) : null}
-          </div> */}
-
-          {/* HÒA LÊ
-          Sinh Nguyen */}
-
-          {/* <div className="w-100 flex flex-wrap mb4 justify-start">
-            <div className="w-third pr3 relative">
-              <Lecture
-                item={lecturers[3]}
-                isSelected={lecturers[3].id === selectedLecture}
-                onSelectLecture={handleSelectLecture}
-              />
-            </div>
-            <div className="w-third ph2 relative">
-                <Lecture
-                  item={lecturers[4]}
-                  isSelected={lecturers[4].id === selectedLecture}
-                  onSelectLecture={handleSelectLecture}
-                />
-              </div>
-            {[5].includes(selectedLecture) ? (
-              <LectureDescription item={arrAll[selectedLecture]} />
-            ) : null}
-          </div> */}
         </div>
       </div>
 
@@ -248,27 +184,10 @@ const BlockLargeScreen = ({ advisors, lecturers, guestLecturers }) => {
               />
             </div>
 
-            {/* <div className="w-third ph2 relative">
-              <Lecture
-                item={guestLecturers[1]}
-                isSelected={guestLecturers[1].id === selectedLecture}
-                onSelectLecture={handleSelectLecture}
-              />
-            </div>
-            <div className="w-third pl3 relative">
-              <Lecture
-                item={guestLecturers[2]}
-                isSelected={guestLecturers[2].id === selectedLecture}
-                onSelectLecture={handleSelectLecture}
-              />
-            </div> */}
-
-            {/* {[5, 6, 7].includes(selectedLecture) ? (
-              <LectureDescription item={arrAll[selectedLecture]} />
-            ) : null} */}
-
             {arrGuestLecturesId.includes(selectedLecture) ? (
-              <LectureDescription item={arrAll.find(item => item.id === selectedLecture)} />
+              <LectureDescription
+                item={arrAll.find((item) => item.id === selectedLecture)}
+              />
             ) : null}
           </div>
         </div>

@@ -58,18 +58,25 @@
       "image": "avs_triettran.jpg",
       "title": "Phó Hiệu Trưởng Trường Đại Học Khoa Học <br/> Tự Nhiên, ĐHQG",
       "description": "Sau khi nhận bằng tiến sĩ tại Trường Đại Học Khoa học Tự nhiên năm 2009, TS. Minh Triết hiện đang là phó giáo sư kiêm phó hiệu trưởng của trường đồng thời giữ  trò Viện trưởng Viện John von Neumann.<br/><br/>Anh đã sáng chế và đồng sáng chế 90 bài luận nghiên cứu khoa học và hơn 400 trích dẫn từ Google Scholar trong lĩnh vực Computer Vision (Thị Giác Máy Tính), Machine Learning (Học Máy), Virtual Reality (Thực Tế Ảo), và Augmented Reality (Thực Tế Ảo Tăng Cường)."
+    }, 
+    {
+      "id": 2,
+      "name": "Thư Nguyễn",
+      "image": "lt_thunguyen.jpg",
+      "title": "Cựu Resident tại VinAI Research<br/>",
+      "description": "Nghiên cứu sinh tại phòng thí nghiệm Công nghệ Phần mềm tại Trường Đại học Công nghệ Thông tin ĐHQG TP.HCM. Anh Thư rất đam mê việc áp dụng Deep Learning (Học Sâu) vào xây dựng hệ thống xử lý ngôn ngữ. Không chỉ vậy, anh còn rất tích cực trong việc học những kiến thức mới và xây dựng sản phẩm công nghệ."
     }
   ],
   "lecturers": [
     {
-      "id": 2,
+      "id": 3,
       "name": "Tiệp Nguyễn",
       "image": "lt_tiepnguyen.jpg",
       "title": "Giảng viên tại Trường Đại học Công nghệ Thông tin, ĐHQG-HCM<br/>",
       "description": "Tiệp Nguyễn hiện đang là giảng viên tại Trường Đại học Công nghệ Thông tin, ĐHQG-HCM. Ngoài ra, anh còn là nghiên cứu sinh tại Phòng Thí nghiệm Truyền thông Đa phương tiện (MMLab). Anh đã nhận bằng tiến sĩ từ Trường Đại học Công nghệ Thông tin và bằng thạc sĩ từ Trường Đại Học Khoa học Tự nhiên cùng viện John von Neumann. Lĩnh vực nghiên cứu của anh tập trung vào Computer Vision (Thị Giác Máy Tính) và Machine Learning (Học Máy). Với kinh nghiệm dày dặn, anh Tiệp luôn có niềm đam mê truyền đạt kiến thức đến với những học trò của mình."
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "An Nguyễn",
       "image": "lt_annguyen.jpg",
       "title": "Nghiên cứu sinh tại phòng thí nghiệm Công nghệ Phần mềm tại Trường Đại học Công nghệ Thông tin ĐHQG TP.HCM",
@@ -77,7 +84,7 @@
     },
 
     {
-      "id": 4,
+      "id": 5,
       "name": "Kiên Huỳnh",
       "image": "lt_kienhuynh.jpg",
       "title": "Nghiên cứu sinh Tiến sĩ tại Đại học Stony Brook, New York.<br/>",
@@ -86,7 +93,7 @@
   ],
   "guest_lecturers": [
     {
-      "id": 5,
+      "id": 6,
       "name": "Phong Nguyễn",
       "image": "gl_phongnguyen.jpg",
       "title": "Visiting Researcher tại Mila - Quebec Artificial Intelligence Institute",

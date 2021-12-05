@@ -37,7 +37,7 @@ const Lecture = ({ item, isSelected, onSelectLecture }) => {
       </div>
       {isSelected ? (
         <p className="tc pt3">
-          <img src="images/arrow_down_white.svg" class="w2" alt="" />
+          <img src="images/arrow_down_white.svg" className="w2" alt="" />
         </p>
       ) : null}
     </>

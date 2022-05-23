@@ -34,3 +34,22 @@ https://developers.facebook.com/tools/debug/?q=https%3A%2F%2Fml.vietai.org%2F
 ```txt
 PasswordAuthentication yes
 ```
+
+```bash
+npm install gh-pages --save-dev
+```
+
+package.json
+
+```json
+{
+  // ...
+  "scripts": {
+    // ...
+    "deploy": "gh-pages -d build",
+    "predeploy": "yarn run build"
+    // ...
+  }
+  // ...
+}
+```

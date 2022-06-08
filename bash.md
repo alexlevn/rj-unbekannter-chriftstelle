@@ -55,3 +55,9 @@ package.json
 ```
 
 old host: 128.199.147.130
+
+Create New subdomain record
+
+```
+ml.vietai.org	A	10 minutes	185.199.108.153
+```

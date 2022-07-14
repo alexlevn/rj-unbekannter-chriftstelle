@@ -1,7 +1,8 @@
 {
   "register_link": "https://forms.gle/BEiqHPBqcrTGwp8Q6",
   "countdown": {
-    "time_to_start": "2021-11-27T23:59:01"
+    "time_to_start": "2022-08-28T23:59:01",
+    "early_bird_time": "2022-08-21T23:59:01"
   },
   "menu": {
     "objectives": {
@@ -58,7 +59,7 @@
       "image": "avs_triettran.jpg",
       "title": "Phó Hiệu Trưởng Trường Đại Học Khoa Học <br/> Tự Nhiên, ĐHQG",
       "description": "Sau khi nhận bằng tiến sĩ tại Trường Đại Học Khoa học Tự nhiên năm 2009, TS. Minh Triết hiện đang là phó giáo sư kiêm phó hiệu trưởng của trường đồng thời giữ  trò Viện trưởng Viện John von Neumann.<br/><br/>Anh đã sáng chế và đồng sáng chế 90 bài luận nghiên cứu khoa học và hơn 400 trích dẫn từ Google Scholar trong lĩnh vực Computer Vision (Thị Giác Máy Tính), Machine Learning (Học Máy), Virtual Reality (Thực Tế Ảo), và Augmented Reality (Thực Tế Ảo Tăng Cường)."
-    }, 
+    },
     {
       "id": 2,
       "name": "Thư Nguyễn",

@@ -1,9 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
-import '../App.css';
-import '../tachyons.min.css';
+import dayjs from 'dayjs'
+import React from 'react'
+import '../App.css'
+import '../tachyons.min.css'
 
-const BlockDangKy = ({ id, registerLink, aff }) => {
+const BlockDangKy = ({ id, registerLink, aff, early_bird_time }) => {
   return (
     <>
       <div
@@ -21,7 +22,9 @@ const BlockDangKy = ({ id, registerLink, aff }) => {
             <br />
             {aff ? null : (
               <span className="f5 f4-ns black-50 fw5 lh-copy ttu">
-                Đăng ký sớm trước 23h59p ngày 27/11/2021.
+                {/* Đăng ký sớm trước 23h59p ngày 27/11/2021. */}
+                Đăng ký sớm trước 23h59p ngày{' '}
+                {dayjs(Date.parse(early_bird_time)).format('MM/DD/YYYY')}.
               </span>
             )}
           </p>
@@ -87,7 +90,7 @@ const BlockDangKy = ({ id, registerLink, aff }) => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default BlockDangKy;
+export default BlockDangKy

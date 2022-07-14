@@ -75,6 +75,7 @@ export default class App extends React.Component {
             id={data.menu.register.id}
             aff={code}
             registerLink={data.register_link}
+            early_bird_time={data.countdown.early_bird_time}
           />
 
           <BlockFooter links={data.links} />
